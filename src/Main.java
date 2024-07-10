@@ -19,5 +19,17 @@ public class Main {
             System.out.print(i + " ");
             i --;
         }
+        System.out.println();
+        System.out.println("Example 3");
+        int population = 12000000;
+        int born = 17;
+        int death = 8;
+        int year = 0;
+        do
+        {
+            year ++;
+            population = population + (population/1000)*born - (population/1000)*death;
+            System.out.println("Год " + year + ", численность населения составляет " + population + " человек.");
+        }while (year < 10);
     }
 }
