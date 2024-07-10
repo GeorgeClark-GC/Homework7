@@ -8,5 +8,16 @@ public class Main {
             savings = savings + 15000;
             System.out.println("Месяц " + month + ", сумма накоплений равна: " + savings + " рублей.");
         }
+        System.out.println("Example 2");
+        int i = 0;
+        while (i < 10){
+            i ++;
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        for (; i > 0;){
+            System.out.print(i + " ");
+            i --;
+        }
     }
 }
