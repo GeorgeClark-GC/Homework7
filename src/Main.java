@@ -39,5 +39,15 @@ public class Main {
             bankSavings = bankSavings + (bankSavings/100)*7;
             System.out.println("Месяц " + newMonth + ", сумма накоплений равна: " + bankSavings + " рублей.");
         }while(bankSavings < 12000000);
+        System.out.println("Example 5");
+        int bankSavings2 = 15000;
+        int newMonth2 = 0;
+        do{
+            newMonth2 ++;
+            bankSavings2 = bankSavings2 + (bankSavings2/100)*7;
+            if (newMonth2%6 == 0) {
+                System.out.println("Месяц " + newMonth2 + ", сумма накоплений равна: " + bankSavings2 + " рублей.");
+            }
+        }while(bankSavings2 < 12000000);
     }
 }
