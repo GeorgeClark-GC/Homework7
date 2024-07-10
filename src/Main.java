@@ -74,5 +74,13 @@ public class Main {
             }
             day ++;
         }while (day < 31);
+        System.out.println("Example 8");
+        int year2 = 0;
+        do {
+            year2 = year2 + 79;
+            if (year2 > 1824 && year2 < 2124){
+                System.out.println(year2);
+            }
+        }while (year2 < 2124);
     }
 }
