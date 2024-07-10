@@ -3,9 +3,10 @@ public class Main {
         System.out.println("Example 1");
         int savings = 0;
         int month = 0;
+        int contribution = 15000;
         while(savings < 2459000){
             month ++;
-            savings = savings + 15000;
+            savings = savings + savings/100 + contribution;
             System.out.println("Месяц " + month + ", сумма накоплений равна: " + savings + " рублей.");
         }
         System.out.println("Example 2");
@@ -40,15 +41,15 @@ public class Main {
             System.out.println("Месяц " + newMonth + ", сумма накоплений равна: " + bankSavings + " рублей.");
         }while(bankSavings < 12000000);
         System.out.println("Example 5");
-        int bankSavings2 = 15000;
-        int newMonth2 = 0;
+        int bankSavingsSecond = 15000;
+        int newMonthSecond = 0;
         do{
-            newMonth2 ++;
-            bankSavings2 = bankSavings2 + (bankSavings2/100)*7;
-            if (newMonth2 % 6 == 0) {
-                System.out.println("Месяц " + newMonth2 + ", сумма накоплений равна: " + bankSavings2 + " рублей.");
+            newMonthSecond ++;
+            bankSavingsSecond = bankSavingsSecond + (bankSavingsSecond/100)*7;
+            if (newMonthSecond % 6 == 0) {
+                System.out.println("Месяц " + newMonthSecond + ", сумма накоплений равна: " + bankSavingsSecond + " рублей.");
             }
-        }while(bankSavings2 < 12000000);
+        }while(bankSavingsSecond < 12000000);
         System.out.println("Example 6");
         int bankSavingsVasily = 15000;
         int yearVasily = 0;
@@ -65,22 +66,23 @@ public class Main {
         }while (yearVasily < 9);
         System.out.println("Example 7");
         int day = 1;
-        int dateFirstFriday = 5;
-        int firstFriday = dateFirstFriday;
-        do {
-            boolean friday = (day - firstFriday) % 7 == 0 && firstFriday == dateFirstFriday;
-            if (friday){
-                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчёт.");
-            }
-            day ++;
-        }while (day < 31);
+        int firstFriday = 5;
+        day = firstFriday;
+        while (day <= 31){
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчёт.");
+            day = day + 7;
+        }
         System.out.println("Example 8");
-        int year2 = 0;
+        int yearComet = 0;
+        int thisYear = 2024;
+        int timelapse = 79;
+        int min = thisYear - 200;
+        int max = thisYear + 100;
         do {
-            year2 = year2 + 79;
-            if (year2 > 1824 && year2 < 2124){
-                System.out.println(year2);
+            yearComet = yearComet + timelapse;
+            if (yearComet > min && yearComet < max){
+                System.out.println(yearComet);
             }
-        }while (year2 < 2124);
+        }while (yearComet < max);
     }
 }
