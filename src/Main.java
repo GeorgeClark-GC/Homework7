@@ -63,5 +63,16 @@ public class Main {
                 yearVasily++;
             }
         }while (yearVasily < 9);
+        System.out.println("Example 7");
+        int day = 1;
+        int dateFirstFriday = 5;
+        int firstFriday = dateFirstFriday;
+        do {
+            boolean friday = (day - firstFriday) % 7 == 0 && firstFriday == dateFirstFriday;
+            if (friday){
+                System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчёт.");
+            }
+            day ++;
+        }while (day < 31);
     }
 }
