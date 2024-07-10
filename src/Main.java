@@ -45,9 +45,23 @@ public class Main {
         do{
             newMonth2 ++;
             bankSavings2 = bankSavings2 + (bankSavings2/100)*7;
-            if (newMonth2%6 == 0) {
+            if (newMonth2 % 6 == 0) {
                 System.out.println("Месяц " + newMonth2 + ", сумма накоплений равна: " + bankSavings2 + " рублей.");
             }
         }while(bankSavings2 < 12000000);
+        System.out.println("Example 6");
+        int bankSavingsVasily = 15000;
+        int yearVasily = 0;
+        int monthVasily = 0;
+        do {
+            monthVasily++;
+            bankSavingsVasily = bankSavingsVasily + (bankSavingsVasily / 100) * 7;
+            if (monthVasily % 6 == 0) {
+                System.out.println("Месяц " + monthVasily + ", сумма накоплений равна: " + bankSavingsVasily + " рублей.");
+            }
+            if (monthVasily % 12 == 0){
+                yearVasily++;
+            }
+        }while (yearVasily < 9);
     }
 }
