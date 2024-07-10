@@ -31,5 +31,13 @@ public class Main {
             population = population + (population/1000)*born - (population/1000)*death;
             System.out.println("Год " + year + ", численность населения составляет " + population + " человек.");
         }while (year < 10);
+        System.out.println("Example 4");
+        int bankSavings = 15000;
+        int newMonth = 0;
+        do{
+            newMonth ++;
+            bankSavings = bankSavings + (bankSavings/100)*7;
+            System.out.println("Месяц " + newMonth + ", сумма накоплений равна: " + bankSavings + " рублей.");
+        }while(bankSavings < 12000000);
     }
 }
